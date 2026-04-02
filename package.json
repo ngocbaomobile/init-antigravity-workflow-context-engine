@@ -1,6 +1,6 @@
 {
     "name": "init-antigravity-workflow-context-engine",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Universal AI Workflow Bootstrapper — Scaffold the 4-Round Interactive Wizard for any project with Jira, Confluence & AI Context Engine integration.",
     "type": "module",
     "main": "src/index.js",
