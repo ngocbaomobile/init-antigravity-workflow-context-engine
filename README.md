@@ -32,19 +32,7 @@ The CLI will guide you through the setup. Just answer the prompts.
 
 ## Architecture Overview
 
-```
-┌─────────────────────────────────────────────────────┐
-│              AI Context Engine Architecture          │
-│                                                      │
-│  Git Repos ──auto pull──→ Context Engine (local DB) │
-│  Confluence ──extract──→  Context Engine (local DB) │
-│  Jira ──────MCP────────→ Agent                      │
-│                                                      │
-│  Agent ──query──→ Context Engine ──→ brainstorm/plan│
-│  Agent ──code───→ Real source repo (not DB)         │
-│  Agent ──write──→ Confluence (via MCP) → auto-sync  │
-└─────────────────────────────────────────────────────┘
-```
+![Architecture Overview](https://raw.githubusercontent.com/ngocbaomobile/init-antigravity-workflow-context-engine/main/docs/architecture-overview.png)
 
 ---
 
