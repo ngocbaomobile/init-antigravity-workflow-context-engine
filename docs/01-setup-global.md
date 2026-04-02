@@ -36,9 +36,9 @@ npx init-antigravity-workflow-context-engine
 |--------|---------------|---------|
 | **Select your role** | `Global (Master Architect)` | — |
 | **Select framework** | Your main framework | `Flutter (Dart)` |
-| **Enter PREFIX** | Short project identifier | `BTRACK` |
-| **Jira project key** | Your Jira project key | `CB` |
-| **Confluence Space IDs** | Space IDs (comma-separated) | `BTRACK,BTRACK-ARCH` |
+| **Enter PREFIX** | Short project identifier | `MYAPP` |
+| **Jira project key** | Your Jira project key | `MYAPP` |
+| **Confluence Space IDs** | Space IDs (comma-separated) | `MYAPP,MYAPP-ARCH` |
 | **Git repo URLs** | Repos indexed by Context Engine | `https://github.com/company/main-app.git` |
 | **Select AI agent** | Your AI agent tool | `Antigravity (Gemini)` |
 | **Overwrite?** | Usually `No` for first run | `No` |
@@ -50,7 +50,7 @@ my-main-project/
 ├── .aiignore                              ✅ Created
 ├── .agentrules                            ✅ Created
 └── .antigravity/
-    ├── 00_BTRACK_Agent_Workflow.md         ✅ Constitution
+    ├── 00_MYAPP_Agent_Workflow.md          ✅ Constitution
     └── 00_Core_Routing.md                 ✅ Full Access routing
 ```
 
@@ -58,7 +58,7 @@ my-main-project/
 
 Copy the prompt shown by the CLI and paste it into your AI agent. It will:
 1. Scan your entire codebase
-2. Generate `.antigravity/BTRACK_Architecture_Map.md`
+2. Generate `.antigravity/MYAPP_Architecture_Map.md`
 3. Create a Confluence page: `[Global-Convention] Master_Architecture`
 
 ### 6. Create convention pages in Confluence

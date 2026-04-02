@@ -7,7 +7,7 @@
 
 /**
  * Generate agent rules content.
- * @param {string} prefix   - Project prefix (e.g. "LC247", "BTRACK")
+ * @param {string} prefix   - Project prefix (e.g. "LC247", "MYAPP")
  * @param {string} target   - Agent target: "antigravity" | "cursor" | "both"
  * @returns {string} Full agent rules file content
  */

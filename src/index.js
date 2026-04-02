@@ -141,7 +141,7 @@ export async function run() {
 
     // 1c. Prefix
     const rawPrefix = await input({
-        message: 'Enter your project PREFIX (e.g. LC247, BTRACK):',
+        message: 'Enter your project PREFIX (e.g. LC247, MYAPP):',
         validate: (val) => {
             if (!val || val.trim().length === 0) return 'PREFIX is required.';
             if (!/^[A-Za-z0-9_-]+$/.test(val.trim())) return 'PREFIX must be alphanumeric (letters, numbers, hyphens, underscores).';

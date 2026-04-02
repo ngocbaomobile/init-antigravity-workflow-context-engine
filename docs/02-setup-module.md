@@ -37,9 +37,9 @@ npx init-antigravity-workflow-context-engine
 | **Select your role** | `Module (Module Owner)` | — |
 | **Module name** | Your module name | `Payment` |
 | **Select framework** | Your framework | `Flutter (Dart)` |
-| **Enter PREFIX** | Same as main project | `BTRACK` |
-| **Jira project key** | Your Jira key | `CB` |
-| **Confluence Space IDs** | Same shared space | `BTRACK` |
+| **Enter PREFIX** | Same as main project | `MYAPP` |
+| **Jira project key** | Your Jira key | `MYAPP` |
+| **Confluence Space IDs** | Same shared space | `MYAPP` |
 | **Git repo URLs** | Your module repo | `https://github.com/company/payment-service.git` |
 | **Dependencies** | Modules you depend on | `Auth,Core` |
 | **Select AI agent** | Your AI agent | `Antigravity (Gemini)` |
@@ -66,7 +66,7 @@ payment-service/
 ├── .aiignore                              ✅ Created
 ├── .agentrules                            ✅ Created
 └── .antigravity/
-    ├── 00_BTRACK_Agent_Workflow.md         ✅ Constitution (scoped)
+    ├── 00_MYAPP_Agent_Workflow.md          ✅ Constitution (scoped)
     └── 00_Core_Routing.md                 ✅ Scoped routing
 ```
 
@@ -90,7 +90,7 @@ Open `00_Core_Routing.md` and verify:
 
 Paste the CLI prompt into your AI agent. It will:
 1. Scan your module's codebase
-2. Generate `.antigravity/BTRACK_Payment_Architecture_Map.md`
+2. Generate `.antigravity/MYAPP_Payment_Architecture_Map.md`
 3. Create a Confluence page: `[Module-Payment] Architecture_Map`
 
 ### 8. Create module-specific pages in Confluence

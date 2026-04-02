@@ -132,7 +132,7 @@ When you run the CLI, you'll be asked:
 1.  Select your role: Global / Module
 2.  [Module only] Enter module name
 3.  Select framework (Flutter, Laravel, React, Node.js, Python, Other)
-4.  Enter project PREFIX (e.g. LC247, BTRACK)
+4.  Enter project PREFIX (e.g. LC247, MYAPP)
 5.  Enter Jira project key
 6.  Enter Confluence Space ID(s)          ← for Context Engine indexing
 7.  Enter Git repo URL(s)                 ← for Context Engine indexing
@@ -237,7 +237,7 @@ Detailed guides with real-world examples for every use case:
 |---------|--------|
 | 2.0.0 | Fork: Replace NotebookLM with AI Context Engine. Add Confluence Space ID / Git repo prompts. Knowledge writeback via Confluence MCP. |
 
-**Based on** [init-antigravity-workflow](https://github.com/ngocbaomobile/init-antigravity-workflow) v1.3.3.
+**Based on** [init-antigravity-workflow](https://github.com/ngocbaomobile/init-antigravity-workflow) — fully rewritten for AI Context Engine.
 
 ## License
 
