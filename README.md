@@ -189,6 +189,40 @@ The agent also supports slash commands: `/pause`, `/resume`, `/handover`.
 
 ---
 
+## 📖 Documentation
+
+Detailed guides with real-world examples for every use case:
+
+| # | Guide | Description |
+|---|-------|-------------|
+| 1 | [Setup — Global (Master Architect)](docs/01-setup-global.md) | Step-by-step setup for the lead architect |
+| 2 | [Setup — Module (Module Owner)](docs/02-setup-module.md) | Setup for sub-module with context isolation |
+| 3 | [Fix a Bug (Real-World Example)](docs/03-fix-bug-flow.md) | Complete bug fix walkthrough using 4-Round Wizard |
+| 4 | [Build a Feature (Real-World Example)](docs/04-new-feature-flow.md) | New feature walkthrough with existing Jira ticket |
+| 5 | [Pause, Resume & Handover](docs/05-pause-resume-handover.md) | State management across sessions and developers |
+
+### Infographics
+
+<details>
+<summary>🏗️ Architecture Overview</summary>
+
+![Architecture Overview](docs/architecture-overview.png)
+</details>
+
+<details>
+<summary>🔄 4-Round Interactive Wizard</summary>
+
+![4-Round Wizard](docs/four-round-wizard.png)
+</details>
+
+<details>
+<summary>🔒 Multi-Repo Context Isolation</summary>
+
+![Context Isolation](docs/context-isolation.png)
+</details>
+
+---
+
 ## Requirements
 
 - Node.js ≥ 18
