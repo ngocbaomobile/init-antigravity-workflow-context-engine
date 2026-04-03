@@ -1,14 +1,30 @@
 #!/usr/bin/env node
 
 /**
- * CLI entry point for init-antigravity-workflow.
+ * CLI entry point for init-antigravity-workflow-context-engine.
  * This file is referenced in package.json "bin" and runs via:
- *   npx init-antigravity-workflow
+ *   npx init-antigravity-workflow-context-engine          (init — default)
+ *   npx init-antigravity-workflow-context-engine clean    (remove generated files)
+ *   npx init-antigravity-workflow-context-engine clean --force  (skip confirmation)
  */
 
-import { run } from '../src/index.js';
+const args = process.argv.slice(2);
+const command = args[0];
 
-run().catch((err) => {
-    console.error(err);
-    process.exit(1);
-});
+if (command === 'clean') {
+    const force = args.includes('--force') || args.includes('-f');
+
+    import('../src/clean.js')
+        .then(({ clean }) => clean({ force }))
+        .catch((err) => {
+            console.error(err);
+            process.exit(1);
+        });
+} else {
+    import('../src/index.js')
+        .then(({ run }) => run())
+        .catch((err) => {
+            console.error(err);
+            process.exit(1);
+        });
+}
